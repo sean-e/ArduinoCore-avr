@@ -29,7 +29,8 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
 
-#include "binary.h"
+// mTroll minimal Arduino compatibility
+// #include "binary.h"
 
 #ifdef __cplusplus
 extern "C"{
@@ -228,10 +229,13 @@ extern const uint8_t PROGMEM digital_pin_to_timer_PGM[];
 #endif
 
 #ifdef __cplusplus
-#include "WCharacter.h"
-#include "WString.h"
-#include "HardwareSerial.h"
-#include "USBAPI.h"
+// mTroll minimal Arduino compatibility
+// #include "WCharacter.h"
+// #include "WString.h"
+// #include "HardwareSerial.h"
+// #include "USBAPI.h"
+#include <ctype.h>
+#include <SPI.h>
 #if defined(HAVE_HWSERIAL0) && defined(HAVE_CDCSERIAL)
 #error "Targets with both UART0 and CDC serial not supported"
 #endif
