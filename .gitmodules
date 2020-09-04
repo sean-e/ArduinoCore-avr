@@ -1,0 +1,3 @@
+[submodule "variants/mega32"]
+	path = variants/mega32
+	url = https://github.com/andrimarjonsson/ArduinoMega32.git
