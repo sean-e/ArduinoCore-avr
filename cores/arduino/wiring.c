@@ -281,6 +281,7 @@ void init()
 	#error	Timer 0 overflow interrupt not set correctly
 #endif
 
+#if 0
 	// timers 1 and 2 are used for phase-correct hardware pwm
 	// this is better for motors as it ensures an even waveform
 	// note, however, that fast pwm mode can achieve a frequency of up
@@ -388,5 +389,7 @@ void init()
 	UCSRB = 0;
 #elif defined(UCSR0B)
 	UCSR0B = 0;
+#endif
+
 #endif
 }
